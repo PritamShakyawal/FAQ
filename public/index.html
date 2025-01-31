@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>FAQ Management System</h1>
+
+    <!-- Language Selection -->
+    <label for="language">Select Language:</label>
+    <select id="language">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="bn">Bengali</option>
+    </select>
+
+    <!-- Form to Add a New FAQ -->
+    <form id="add-faq-form">
+      <h2>Add a New FAQ</h2>
+      <label for="question">Question:</label>
+      <input type="text" id="question" name="question" required>
+      <label for="answer">Answer:</label>
+      <textarea id="answer" name="answer" required></textarea>
+      <button type="submit">Add FAQ</button>
+    </form>
+
+    <!-- List of FAQs -->
+    <div id="faq-list">
+      <h2>FAQs</h2>
+      <ul id="faqs"></ul>
+    </div>
+
+    <!-- Form to Update an FAQ -->
+    <form id="update-faq-form" style="display: none;">
+      <h2>Update FAQ</h2>
+      <input type="hidden" id="update-id">
+      <label for="update-question">Question:</label>
+      <input type="text" id="update-question" name="question" required>
+      <label for="update-answer">Answer:</label>
+      <textarea id="update-answer" name="answer" required></textarea>
+      <button type="submit">Update FAQ</button>
+      <button type="button" id="cancel-update">Cancel</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
