@@ -25,7 +25,7 @@ Follow these steps to set up the project locally:
 
 
 ## Install dependencies:
-
+   
   npm install -y  
 
   npm install express mongoose redis dotenv nodemon @vitalets/google-translate-api google-translate-api-x
@@ -50,7 +50,8 @@ redis-server
 ## Start the server:
 
 nodemon index.js 
-    or
+  
+  or
     
 npm start
 
