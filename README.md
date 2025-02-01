@@ -48,8 +48,8 @@ redis-server
 
 
 ## Start the server:
-nodemon index.js 
 
+nodemon index.js 
     or
     
 npm start
