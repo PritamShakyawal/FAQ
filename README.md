@@ -31,7 +31,7 @@ Follow these steps to set up the project locally:
   npm install express mongoose redis dotenv nodemon @vitalets/google-translate-api google-translate-api-x
 
 
-### Set up environment variables:
+## Set up environment variables:
 
 MONGO_URI=mongodb://localhost:27017/faq-app
 
