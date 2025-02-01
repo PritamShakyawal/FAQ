@@ -45,11 +45,11 @@ Ensure Redis and MongoDB are running on your machine.
 redis-server
 (To check the redis server is running or not write ping then it will return pong in response that means server is running.)
 
-## For MongoDB:
-mongod
 
 ## Start the server:
-nodemon index.js or npm start
+nodemon index.js 
+    or 
+npm start
 
 
 ## Access the application:
