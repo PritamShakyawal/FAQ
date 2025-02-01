@@ -24,21 +24,35 @@ Follow these steps to set up the project locally:
    cd project
 
 
-Install dependencies:
- npm install
+## Install dependencies:
+  npm install -y
+  
+  npm install express mongoose redis dotenv nodemon @vitalets/google-translate-api google-translate-api-x
 
 
-Set up environment variables:
+### Set up environment variables:
 
 MONGO_URI=mongodb://localhost:27017/faq-app
+
 REDIS_URL=redis://localhost:6379
+
 PORT=3000
 
-Start the server:
-nodemon index.js
+## Start Redis:
+Ensure Redis and MongoDB are running on your machine.
+
+## For Redis: (open window powershell and run redis-cli then it will run the redis server only if install in the system)
+redis-server
+(To check the redis server is running or not write ping then it will return pong in response that means server is running.)
+
+## For MongoDB:
+mongod
+
+## Start the server:
+nodemon index.js or npm start
 
 
-Access the application:
+## Access the application:
 http://localhost:3000
 
 ---
@@ -50,17 +64,15 @@ Provide examples of how to use the API endpoints.
 ```markdown
 ## API Usage
 
-The backend API provides the following endpoints:
+## The backend API provides the following endpoints:
 
-### 1. Add a New FAQ
-- **URL**: `POST /api/faqs`
-- **Request Body**:
-  ```json
-  {
-    "question": "What is Node.js?",
-    "answer": "Node.js is a runtime environment for executing JavaScript on the server."
-  }
-
+API Endpoints
+Method	Endpoint	Description
+GET	/api/faq	Fetch all FAQs.
+POST	/api/faq	Add a new FAQ with translation.
+GET	/api/faq/:id	Fetch a specific FAQ by ID.
+PUT	/api/faq/:id	Update an existing FAQ.
+DELETE	/api/faq/:id	Delete an FAQ.
 
 
 : Get All FAQs
