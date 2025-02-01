@@ -49,7 +49,9 @@ redis-server
 
 ## Start the server:
 nodemon index.js 
-    or 
+
+    or
+    
 npm start
 
 
