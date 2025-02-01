@@ -20,21 +20,26 @@ Follow these steps to set up the project locally:
 ### Steps
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/faq-management-system.git
-   cd faq-management-system
+   git clone https://github.com/PritamShakyawal/FAQ.git
+   cd project
 
+
+Install dependencies:
+ npm install
 
 
 Set up environment variables:
 
-   MONGO_URI=mongodb://localhost:27017/faq-app
+MONGO_URI=mongodb://localhost:27017/faq-app
 REDIS_URL=redis://localhost:6379
 PORT=3000
 
+Start the server:
+nodemon index.js
 
 
 Access the application:
-
+http://localhost:3000
 
 ---
 
@@ -55,7 +60,6 @@ The backend API provides the following endpoints:
     "question": "What is Node.js?",
     "answer": "Node.js is a runtime environment for executing JavaScript on the server."
   }
-
 
 
 
