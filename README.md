@@ -31,7 +31,7 @@ Follow these steps to set up the project locally:
   npm install express mongoose redis dotenv nodemon @vitalets/google-translate-api google-translate-api-x
 
 
-## Set up environment variables:
+## Set up environment variables:(Create a env file in the main folder then put the below line inside that file)
 
 MONGO_URI=mongodb://localhost:27017/faq-app
 
@@ -62,6 +62,7 @@ http://localhost:3000
 ---
 
 ### **Step 4: Add API Usage Examples**
+## (When you click on add FAQ it will take 5 to 6 seconds to add so have patience and when you click delete then at the bottom you can see update option.)
 Provide examples of how to use the API endpoints.
 
 #### **Filename: `README.md`**
@@ -88,13 +89,13 @@ Query Parameters:
 lang (optional): Language code (e.g., en, hi, bn). Defaults to en.
 
 # Fetch FAQs in English (default)
- http://localhost:8000/api/faqs/
+ http://localhost:3000/api/faqs/
 
 # Fetch FAQs in Hindi
- http://localhost:8000/api/faqs/?lang=hi
+ http://localhost:3000/api/faqs/?lang=hi
 
 # Fetch FAQs in Bengali
- http://localhost:8000/api/faqs/?lang=bn
+ http://localhost:3000/api/faqs/?lang=bn
 
 
 
